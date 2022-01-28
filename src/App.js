@@ -1,7 +1,4 @@
 import Flowbuilder from "./reactflow/Flowbuilder";
-import Input from "./foundation/Input";
-import Button from "./foundation/Button";
-import Text from "./foundation/Text";
 import Navbar from "./screen/Navbar";
 import NodeList from "./screen/NodeList";
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Flowbuilder.css"
 import ReactFlow from 'react-flow-renderer';
 
 
@@ -27,8 +28,12 @@ const elements = [
     { id: 'e2-3', source: '2', target: '3' },
 ];
 
-export default () => (
-    <div style={{ width: 500, height: 300 }}>
+
+
+function Flowbuilder() {
+    return <div className='dottedbg  h-screen w-screen'>
         <ReactFlow elements={elements} />
-    </div>
-);
+    </div>;
+}
+
+export default Flowbuilder;
