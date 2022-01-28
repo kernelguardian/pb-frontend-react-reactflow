@@ -14,13 +14,13 @@ const elements = [
         id: '2',
         // you can also pass a React component as a label
         data: { label: <div>Default Node</div> },
-        position: { x: 250, y: 25 },
+        position: { x: 250, y: 100 },
     },
     {
         id: '3',
         type: 'output', // output node
         data: { label: 'Output Node' },
-        position: { x: 250, y: 25 },
+        position: { x: 250, y: 150 },
     },
     // animated edge
     { id: 'e1-2', source: '1', target: '2', animated: true },
@@ -28,7 +28,7 @@ const elements = [
 ];
 
 export default () => (
-    <div style={{ height: 300 }}>
+    <div style={{ width: 500, height: 300 }}>
         <ReactFlow elements={elements} />
     </div>
 );

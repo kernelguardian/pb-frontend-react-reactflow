@@ -3,14 +3,16 @@ import Input from "./foundation/Input";
 import Button from "./foundation/Button";
 import Text from "./foundation/Text";
 import Navbar from "./screen/Navbar";
-
+import NodeList from "./screen/NodeList";
 
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
-      <h1>Flowbuilder</h1>
-      <Flowbuilder></Flowbuilder>
+      <Navbar ></Navbar>
+      <div className="flex flex-row">
+        <NodeList></NodeList>
+        <Flowbuilder></Flowbuilder>
+      </div>
 
     </div>
 
