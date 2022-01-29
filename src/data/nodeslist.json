@@ -1,0 +1,68 @@
+[
+    {
+        "node_id": "1a",
+        "node_name": "Open Browser",
+        "node_description": "Opens a browser instance",
+        "properties": [
+            {
+                "type": "text",
+                "value": "Some Text Value 1"
+            }
+        ]
+    },
+    {
+        "node_id": "1b",
+        "node_name": "Navigate to a new page",
+        "node_description": "Change the current webpage",
+        "properties": [
+            {
+                "type": "text",
+                "value": "Some Text Value 2"
+            }
+        ]
+    },
+    {
+        "node_id": "1c",
+        "node_name": "Close Browser",
+        "node_description": "Close an open browser instance",
+        "properties": [
+            {
+                "type": "text",
+                "value": "Some Text Value 3"
+            }
+        ]
+    },
+    {
+        "node_id": "2a",
+        "node_name": "Click",
+        "node_description": "Click an element",
+        "properties": [
+            {
+                "type": "text",
+                "value": "Some Text Value 4"
+            }
+        ]
+    },
+    {
+        "node_id": "2b",
+        "node_name": "Type into",
+        "node_description": "Type into an input field",
+        "properties": [
+            {
+                "type": "text",
+                "value": "Some Text Value 4"
+            }
+        ]
+    },
+    {
+        "node_id": "2c",
+        "node_name": "Find Element",
+        "node_description": "Searches for an element",
+        "properties": [
+            {
+                "type": "text",
+                "value": "Some Text Value 5"
+            }
+        ]
+    }
+]

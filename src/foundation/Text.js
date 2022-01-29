@@ -2,7 +2,7 @@ import React from 'react';
 
 function Text() {
     return <div>
-        Text
+        <h1>Some random text</h1>
     </div>;
 }
 
