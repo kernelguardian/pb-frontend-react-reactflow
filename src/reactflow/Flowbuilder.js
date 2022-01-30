@@ -11,7 +11,7 @@ function Flowbuilder({ activeNode, setactiveNode }) {
 
 
 
-    return <div className='dottedbg  h-screen w-screen'>
+    return <div className='dottedbg  h-screen w-screen border-4 border-sky-300 m-2 shadow-lg'>
 
 
         <ReactFlow elements={activeNode} />

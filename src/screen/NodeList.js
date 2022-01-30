@@ -46,14 +46,20 @@ function NodeList({ activeNode, setactiveNode }) {
 
 
     function addNode(e) {
+        let node_detail = []
+        nodes.map((node) => {
+            if (node.node_id === e.currentTarget.id) {
+                node_detail = [node.node_name, node.node_description, node.node_id]
+            }
+        })
+
         const newNode = {
             id: getId(),
             type: 'default', // input node
-            data: { label: 'Input Node' + id },
+            data: { label: node_detail[0] + " " + id },
             position: { x: 250, y: 25 },
         }
         setactiveNode([...activeNode, newNode], ...activeNode)
-        console.log("Clicked", newNode)
 
     }
     return <div className='bg-gradient-to-b from-pasty to-pasty w-64 h-screen rounded-md shadow-lg'>
