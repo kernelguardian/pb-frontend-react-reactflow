@@ -3,8 +3,9 @@ import Input from "../foundation/Input";
 import Text from "../foundation/Text";
 import Card from "../foundation/Card";
 
+let id = 0;
 
-function NodeList() {
+function NodeList({ activeNode, setactiveNode }) {
 
     const nodes = [
         {
@@ -39,9 +40,25 @@ function NodeList() {
         }
     ]
 
+    const getId = () => `${id++}`;
+
+
+
+
+    function addNode(e) {
+        const newNode = {
+            id: getId(),
+            type: 'default', // input node
+            data: { label: 'Input Node' + id },
+            position: { x: 250, y: 25 },
+        }
+        setactiveNode([...activeNode, newNode], ...activeNode)
+        console.log("Clicked", newNode)
+
+    }
     return <div className='bg-gradient-to-b from-pasty to-pasty w-64 h-screen rounded-md shadow-lg'>
         {nodes.map((node) => {
-            return <Card data={node} key={node.node_id}></Card>
+            return <Card data={node} key={node.node_id} addNode={addNode}></Card>
         })}
     </div >;
 }
