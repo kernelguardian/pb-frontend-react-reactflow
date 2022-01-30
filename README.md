@@ -1,3 +1,10 @@
+# PB Front End
+Build with react and React Flow
+
+Upcoming
+Layouting option for node
+Customized nodes
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

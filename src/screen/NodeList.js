@@ -1,6 +1,6 @@
-// import Button from "../foundation/Button";
-// import Input from "../foundation/Input";
-// import Text from "../foundation/Text";
+import Button from "../foundation/Button";
+import Input from "../foundation/Input";
+import Text from "../foundation/Text";
 import Card from "../foundation/Card";
 
 let id = 0;
@@ -56,7 +56,13 @@ function NodeList({ activeNode, setactiveNode }) {
         const newNode = {
             id: getId(),
             type: 'default', // input node
-            data: { label: node_detail[0] + " " + id },
+            data: {
+                label: <>
+                    <Text text={node_detail[0] + " " + id}></Text>
+                    <Input></Input>
+                    <Button></Button>
+                </>
+            },
             position: { x: 250, y: 25 },
         }
         setactiveNode([...activeNode, newNode], ...activeNode)
