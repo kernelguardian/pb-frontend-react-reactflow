@@ -41,7 +41,7 @@ function NodeList() {
 
     return <div className='bg-gradient-to-b from-pasty to-pasty w-64 h-screen rounded-md shadow-lg'>
         {nodes.map((node) => {
-            return <Card data={node}></Card>
+            return <Card data={node} key={node.node_id}></Card>
         })}
     </div >;
 }
