@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <Navbar ></Navbar>
+      <Navbar activeNode={activeNode} setactiveNode={setactiveNode}></Navbar>
       <div className="flex flex-row">
         <NodeList activeNode={activeNode} setactiveNode={setactiveNode}></NodeList>
         <Flowbuilder activeNode={activeNode} setactiveNode={setactiveNode}></Flowbuilder>

@@ -1,6 +1,6 @@
-import Button from "../foundation/Button";
-import Input from "../foundation/Input";
-import Text from "../foundation/Text";
+// import Button from "../foundation/Button";
+// import Input from "../foundation/Input";
+// import Text from "../foundation/Text";
 import Card from "../foundation/Card";
 
 let id = 0;
