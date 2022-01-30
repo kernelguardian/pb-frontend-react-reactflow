@@ -89,7 +89,7 @@ function NodeList({ activeNode, setactiveNode }) {
             if (node.node_id === e.currentTarget.id) {
                 node_detail = [node.node_name, node.node_description, node.node_id]
                 node_properties = node.node_properties
-                console.log(node_properties)
+                // console.log(node_properties)
 
             }
         })
