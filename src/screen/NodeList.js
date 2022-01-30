@@ -15,8 +15,9 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_properties": <>
                 <Text text={"Open Browser" + " " + id}></Text>
                 <Input text="Browser Type"></Input>
+                <Input text="https://www.processbud.com"></Input>
                 <Button text="Apply"></Button>
-                <Button text="Cancel"></Button>
+                <Button text="Reset"></Button>
             </>
         },
         {
@@ -25,9 +26,9 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Change the current webpage",
             "node_properties": <>
                 <Text text={"Navigate to a new page" + " " + id}></Text>
-                <Input></Input>
+                <Input text="https://www.processbud2.com"></Input>
                 <Button text="Apply"></Button>
-                <Button text="Cancel"></Button>
+                <Button text="Reset"></Button>
             </>
         },
         {
@@ -36,9 +37,8 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Close an open browser instance",
             "node_properties": <>
                 <Text text={"Close Browser" + " " + id}></Text>
-                <Input></Input>
                 <Button text="Apply"></Button>
-                <Button text="Cancel"></Button>
+                <Button text="Reset"></Button>
             </>
         },
         {
@@ -47,9 +47,10 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Click an element",
             "node_properties": <>
                 <Text text={"Click" + " " + id}></Text>
-                <Input></Input>
+                <Input text="Element Type"></Input>
                 <Button text="Apply"></Button>
-                <Button text="Cancel"></Button>
+                <Button text="Reset"></Button>
+                <Button text="Fancy new button"></Button>
             </>
         },
         {
