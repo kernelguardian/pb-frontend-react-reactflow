@@ -1,9 +1,22 @@
 import React from 'react';
+const webSocket = new WebSocket("ws://localhost:8000/web");
+
+webSocket.addEventListener('error', function (event) {
+    window.alert("Connection to agent failed.. make sure pb-agent is running on your desktop or download from here https://www.processbud.com")
+});
+
+function sendMessageWS() {
+    webSocket.send("Message")
+    webSocket.onmessage = function (e) {
+        console.log(e)
+    }
+}
 
 function Navbar({ activeNode, setactiveNode }) {
 
     function startAutomation() {
         console.log("Starting Automation")
+        sendMessageWS()
         activeNode.map((node) => {
             console.log(node)
         })
