@@ -14,10 +14,10 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Opens a browser instance",
             "node_properties": <>
                 <Text text={"Open Browser  " + id}></Text>
-                <Input text="Browser Type"></Input>
-                <Input text="https://www.processbud.com"></Input>
-                <Button text="Apply"></Button>
-                <Button text="Reset"></Button>
+                <Input placeholder="Browser Type"></Input>
+                <Input placeholder="https://www.processbud.com"></Input>
+                <Button buttonText="Apply"></Button>
+                <Button buttonText="Reset"></Button>
             </>
         },
         {
@@ -26,9 +26,9 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Change the current webpage",
             "node_properties": <>
                 <Text text={"Navigate to a new page " + id}></Text>
-                <Input text="https://www.processbud2.com"></Input>
-                <Button text="Apply"></Button>
-                <Button text="Reset"></Button>
+                <Input placeholder="https://www.processbud2.com"></Input>
+                <Button buttonText="Apply"></Button>
+                <Button buttonText="Reset"></Button>
             </>
         },
         {
@@ -37,8 +37,8 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Close an open browser instance",
             "node_properties": <>
                 <Text text={"Close Browser " + id}></Text>
-                <Button text="Apply"></Button>
-                <Button text="Reset"></Button>
+                <Button buttonText="Apply"></Button>
+                <Button buttonText="Reset"></Button>
             </>
         },
         {
@@ -47,10 +47,10 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_description": "Click an element",
             "node_properties": <>
                 <Text text={"Click " + id}></Text>
-                <Input text="Element Type"></Input>
-                <Button text="Apply"></Button>
-                <Button text="Reset"></Button>
-                <Button text="Fancy new button"></Button>
+                <Input placeholder="Element Type"></Input>
+                <Button buttonText="Apply"></Button>
+                <Button buttonText="Reset"></Button>
+                <Button buttonText="Fancy new button"></Button>
             </>
         },
         {
@@ -60,8 +60,8 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_properties": <>
                 <Text text={"Type into " + id}></Text>
                 <Input></Input>
-                <Button text="Apply"></Button>
-                <Button text="Cancel"></Button>
+                <Button buttonText="Apply"></Button>
+                <Button buttonText="Cancel"></Button>
             </>
         },
         {
@@ -71,8 +71,8 @@ function NodeList({ activeNode, setactiveNode }) {
             "node_properties": <>
                 <Text text={"Find Element " + id}></Text>
                 <Input></Input>
-                <Button text="Apply"></Button>
-                <Button text="Cancel"></Button>
+                <Button buttonText="Apply"></Button>
+                <Button buttonText="Cancel"></Button>
             </>
         }
     ]

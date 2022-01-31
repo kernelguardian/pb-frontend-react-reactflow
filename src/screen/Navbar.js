@@ -1,14 +1,18 @@
 import React from 'react';
-const webSocket = new WebSocket("ws://localhost:8000/web");
+const webSocket = new WebSocket("ws://localhost:8000/agent_endpoint");
 
 webSocket.addEventListener('error', function (event) {
-    window.alert("Connection to agent failed.. make sure pb-agent is running on your desktop or download from here https://www.processbud.com")
+    // const result = window.confirm("Connection to agent failed..Click OK to start agent, If it still doesn't work make sure Processbud Desktop Agent is installed on your desktop or download from here https://www.processbud.com")
+    // if (result === true) {
+    //     window.open("processbud://somethinghere", "_blank")
+    // }
+
 });
 
 function sendMessageWS() {
     webSocket.send("Message")
     webSocket.onmessage = function (e) {
-        console.log(e)
+        // console.log(e)
     }
 }
 
