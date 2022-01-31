@@ -96,7 +96,7 @@ function NodeList({ activeNode, setactiveNode }) {
 
         const newNode = {
             id: getId(),
-            type: 'default', // input node
+            type: 'default',
             data: {
                 label: node_properties
             },
