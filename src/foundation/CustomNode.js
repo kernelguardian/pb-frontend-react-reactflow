@@ -9,8 +9,7 @@ import Text from './Text';
 const CustomNodeComponent = (props) => {
     return (
         <div >
-
-            <div>{props.data.name}</div>
+            <div>{props.data.node_name}</div>
             <Input placeholder="Type something ?"></Input>
             <Text text="Text to be displayed"></Text>
             <Button buttonText="Submit"></Button>
