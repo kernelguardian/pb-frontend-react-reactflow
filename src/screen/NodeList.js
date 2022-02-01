@@ -2,23 +2,24 @@ import Button from "../foundation/Button";
 import Input from "../foundation/Input";
 import Text from "../foundation/Text";
 import Card from "../foundation/Card";
+import CustomNodeComponent from "../foundation/CustomNode"
+
 
 let id = 0;
+let x = 0;
 
 function NodeList({ activeNode, setactiveNode }) {
+
+    const nodeTypes = {
+        special: CustomNodeComponent,
+    };
 
     const nodes = [
         {
             "node_id": "1a",
             "node_name": "Open Browser",
             "node_description": "Opens a browser instance",
-            "node_properties": <>
-                <Text text={"Open Browser  " + id}></Text>
-                <Input placeholder="Browser Type"></Input>
-                <Input placeholder="https://www.processbud.com"></Input>
-                <Button buttonText="Apply"></Button>
-                <Button buttonText="Reset"></Button>
-            </>
+            "node_properties": <CustomNodeComponent data={{ "node_id": "1a", "node_name": "Open Browser" }}></CustomNodeComponent>
         },
         {
             "node_id": "1b",
@@ -78,6 +79,10 @@ function NodeList({ activeNode, setactiveNode }) {
     ]
 
     const getId = () => `${id++}`;
+    const getX = () => {
+        x += 160
+        return x
+    }
 
 
 
@@ -100,7 +105,7 @@ function NodeList({ activeNode, setactiveNode }) {
             data: {
                 label: node_properties
             },
-            position: { x: 250, y: 25 },
+            position: { x: getX(), y: 25 },
         }
         setactiveNode([...activeNode, newNode], ...activeNode)
 
